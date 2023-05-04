@@ -1,0 +1,2 @@
+--SELECT * FROM subject WHERE id IN (SELECT student_id FROM mark where avg(mark) >  GROUP BY student_id HAVING avg(mark) > 8);
+--SELECT * FROM subject WHERE id IN (SELECT student_id FROM mark where avg(mark) >  GROUP BY student_id HAVING avg(mark) > 8);
