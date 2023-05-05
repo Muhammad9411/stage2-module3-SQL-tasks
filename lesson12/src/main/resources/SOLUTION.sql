@@ -1,7 +1,4 @@
-delete from mark where student_id in (select id from student where groupnumber >= 4);
-delete from payment where student_id in (select id from student where groupnumber >= 4);
 delete from student where groupnumber >= 4;
-delete from student where id in (select student_id from mark where mark <= 4);
-delete from payment where type_id in (select id from paymenttype where name = 'Daily');
+delete from student where id in (select student_id from mark where mark < 4 group by student_id);
 delete from paymenttype where name = 'Daily';
-delete from mark where mark < 7
+delete from mark where mark < 7;
