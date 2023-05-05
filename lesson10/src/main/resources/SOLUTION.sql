@@ -1,2 +1,2 @@
---SELECT * FROM subject WHERE id IN (SELECT student_id FROM mark where avg(mark) >  GROUP BY student_id HAVING avg(mark) > 8);
---SELECT * FROM subject WHERE id IN (SELECT student_id FROM mark where avg(mark) >  GROUP BY student_id HAVING avg(mark) > 8);
+select * from subject a left join (select avg(mark) as mark, subject_id from mark group by subject_id) b on b.subject_id = a.id where b.mark > select avg(mark) from mark;
+select * from student a left join (select avg(amount) as amount, student_id from payment group by student_id) b on b.student_id = a.id where b.amount < select avg(amount) from payment;
