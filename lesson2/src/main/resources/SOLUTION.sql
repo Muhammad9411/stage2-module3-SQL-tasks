@@ -9,6 +9,7 @@ INSERT INTO student (name, groupnumber) VALUES ('Jacob', 3);
 INSERT INTO student (name, groupnumber) VALUES ('Logan', 3);
 INSERT INTO student (name, groupnumber) VALUES ('Justin', 4);
 INSERT INTO student (name, groupnumber) VALUES ('Timber', 4);
+INSERT INTO student (name, groupnumber) VALUES ('Lucy', 4);
 INSERT INTO student (name, groupnumber) VALUES ('Ariana', 5);
 INSERT INTO student (name, groupnumber) VALUES ('Grande', 5);
 INSERT INTO subject (name, grade) VALUES ('Art', 1);
